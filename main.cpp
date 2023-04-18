@@ -15,6 +15,8 @@ int main() {
 	float mediaC = 0;
 	float massimo = 0;
 	float minimo = 0;
+	int moda = 0;
+	int mediana = 0;
 
 	//carico la matrice;
 	caricaM(m1, righe, colonne);
@@ -42,6 +44,15 @@ int main() {
 	printf("\n\nVisualizzo il secondo array (caricato leggendo dal file): \n\n");
 	leggiV(array2, dim);
 	visualizzaV(array2, dim);
+	
+	//parte 2 dell'esercizio (aggiungo moda e mediana)
+	
+	//ricavo la moda della matrice;
+	moda = modaM(m1, righe, colonne);
+	printf("\n\nModa della matrice:%d\n", moda);
+	//ricavo la mediana della matrice;
+	mediana = medianaM(m1, righe, colonne);
+	printf("\n\nMediana della matrice:%d\n", mediana);
 
 
 

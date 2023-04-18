@@ -16,3 +16,7 @@ void visualizzaV(float array[], int dim);
 void scriviV(float array[], int dim);
 //funzione che legge i valori dal file e li inserisce in un array;
 void leggiV(float array[], int dim);
+//funzione che ricava e restituisce la moda dei valori in una matrice;
+int modaM(int matrice[][5], int righe, int colonne);
+//funzione che ricava e restituisce la mediana di una matrice;
+int medianaM(int matrice[][5], int righe, int colonne);
